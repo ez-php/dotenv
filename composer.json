@@ -1,0 +1,44 @@
+{
+  "name": "ezphp/dotenv",
+  "description": "Lightweight .env file loader for PHP — supports quoted values, variable interpolation, and immutable loading",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Uretschnig",
+      "email": "andreas.uretschnig@gmail.com"
+    }
+  ],
+  "keywords": ["dotenv", "env", "environment", "config", "php"],
+  "homepage": "https://github.com/ezphp/dotenv",
+  "support": {
+    "issues": "https://github.com/ezphp/dotenv/issues",
+    "source": "https://github.com/ezphp/dotenv"
+  },
+  "require": {
+    "php": "^8.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^13.0",
+    "phpstan/phpstan": "^2.1",
+    "friendsofphp/php-cs-fixer": "^3.94",
+    "phpstan/phpstan-strict-rules": "^2.0",
+    "phpstan/phpstan-deprecation-rules": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EzPhp\\Env\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "cs": "php-cs-fixer fix",
+    "analyse": "phpstan analyse",
+    "test": "phpunit",
+    "full": "composer analyse && composer cs && composer test"
+  }
+}
