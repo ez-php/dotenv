@@ -1,8 +1,8 @@
-# ezphp/dotenv
+# ez-php/dotenv
 
 Lightweight `.env` file loader for PHP — supports quoted values, variable interpolation, and immutable loading. Zero dependencies.
 
-[![CI](https://github.com/ezphp/dotenv/actions/workflows/ci.yml/badge.svg)](https://github.com/ezphp/dotenv/actions/workflows/ci.yml)
+[![CI](https://github.com/ez-php/dotenv/actions/workflows/ci.yml/badge.svg)](https://github.com/ez-php/dotenv/actions/workflows/ci.yml)
 
 ## Requirements
 
@@ -11,7 +11,7 @@ Lightweight `.env` file loader for PHP — supports quoted values, variable inte
 ## Installation
 
 ```bash
-composer require ezphp/dotenv
+composer require ez-php/dotenv
 ```
 
 ## Usage

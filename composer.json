@@ -10,10 +10,10 @@
     }
   ],
   "keywords": ["dotenv", "env", "environment", "config", "php"],
-  "homepage": "https://github.com/ezphp/dotenv",
+  "homepage": "https://github.com/ez-php/dotenv",
   "support": {
-    "issues": "https://github.com/ezphp/dotenv/issues",
-    "source": "https://github.com/ezphp/dotenv"
+    "issues": "https://github.com/ez-php/dotenv/issues",
+    "source": "https://github.com/ez-php/dotenv"
   },
   "require": {
     "php": "^8.5"
