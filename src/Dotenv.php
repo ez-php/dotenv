@@ -18,7 +18,7 @@ use RuntimeException;
  *
  * @package EzPhp\Env
  */
-final class Dotenv
+final readonly class Dotenv
 {
     /**
      * Dotenv Constructor
@@ -27,8 +27,8 @@ final class Dotenv
      * @param string $filename  Name of the env file (default: '.env').
      */
     public function __construct(
-        private readonly string $directory,
-        private readonly string $filename = '.env',
+        private string $directory,
+        private string $filename = '.env',
     ) {
     }
 
