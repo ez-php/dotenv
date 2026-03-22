@@ -3,6 +3,7 @@
 Lightweight `.env` file loader for PHP — supports quoted values, variable interpolation, and immutable loading. Zero dependencies.
 
 [![CI](https://github.com/ez-php/dotenv/actions/workflows/ci.yml/badge.svg)](https://github.com/ez-php/dotenv/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/ez-php/dotenv/branch/main/graph/badge.svg)](https://codecov.io/gh/ez-php/dotenv)
 
 ## Requirements
 
