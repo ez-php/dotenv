@@ -83,10 +83,8 @@ jobs:
       - name: Run tests with coverage
         run: docker compose exec -T app php -d pcov.enabled=1 vendor/bin/phpunit
 
-      - name: Extract coverage report
-        run: |
-          mkdir -p var/coverage
-          docker compose exec -T app cat var/coverage/clover.xml > var/coverage/clover.xml
+      - name: Fix coverage file ownership
+        run: sudo chown "$USER:$USER" var/coverage/clover.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
