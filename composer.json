@@ -1,6 +1,6 @@
 {
   "name": "ez-php/dotenv",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Lightweight .env file loader for PHP — supports quoted values, variable interpolation, and immutable loading",
   "type": "library",
   "license": "MIT",
