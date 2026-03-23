@@ -2,6 +2,11 @@
 
 All notable changes to `ez-php/dotenv` are documented here.
 
+## [v0.8.6] — 2026-03-23
+
+### Documentation
+- Update CHANGELOG for v0.8.5 [skip ci]
+
 ## [v0.8.5] — 2026-03-23
 
 ### Documentation
