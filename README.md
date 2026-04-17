@@ -60,6 +60,19 @@ EMPTY=
 
 Variables already present in the environment (set before loading) are never overwritten. This means real environment variables (e.g. set in Docker or CI) always take precedence over `.env` file values.
 
+## Parser
+
+`Parser` is the internal class that turns raw `.env` file content into a flat `array<string, string>` map. You can use it directly if you want to parse `.env` content without writing to the environment:
+
+```php
+use EzPhp\Env\Parser;
+
+$vars = (new Parser())->parse(file_get_contents('.env'));
+// ['APP_NAME' => 'My App', 'APP_ENV' => 'production', ...]
+```
+
+All syntax forms are supported: unquoted, double-quoted (escape sequences + interpolation), single-quoted (literal), empty values, `export` prefix, and inline comments.
+
 ## License
 
 MIT — [Andreas Uretschnig](mailto:andreas.uretschnig@gmail.com)
