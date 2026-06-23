@@ -240,6 +240,7 @@ Pure function-style class. `parse(string $content): array<string, string>` — t
 - **`Parser` is stateless and not injectable** — `Dotenv` constructs `Parser` directly (`new Parser()`). There is no parser interface and no reason for one — the parsing format is fixed.
 - **No type coercion** — All values are `string`. The application is responsible for casting to `int`, `bool`, etc. (e.g. `(bool) getenv('APP_DEBUG')`).
 - **No validation or required-variable checks** — Variable presence checks belong in the application bootstrap, not in this package.
+- **PSR-4 namespace is `EzPhp\Env\`, not `EzPhp\Dotenv\`** — This is an intentional, established exception to the `EzPhp\<ModuleName>\` convention. The package is named `ez-php/dotenv` (directory `dotenv`) but its classes live under `EzPhp\Env\` (e.g. `EzPhp\Env\Dotenv`, `EzPhp\Env\Parser`). Changing it would be a backwards-incompatible break for every consumer, so the shorter namespace is kept deliberately. Do **not** "fix" it to `EzPhp\Dotenv\`.
 
 ---
 
